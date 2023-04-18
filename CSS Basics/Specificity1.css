@@ -1,0 +1,33 @@
+/* Specificity order */
+/* Inline style attribute > ID selector > class selector > element selector */
+/* specificity can be increased to max by using "!important" attribute after color/back-ground-color....etc as given below*/
+/* h1{
+    color: green !important;
+} */
+
+h1{
+    color: green;
+}
+h1.heading{
+    color: magenta;
+}
+/* How to calculate specificity */
+/* 0,0,1,1 --->11 */
+
+
+/* As "h1class" is used to change color below "heading" */
+.heading{
+    color: magenta;
+}
+/* How to calculate specificity */
+/* 0,0,1,0 --->10 */
+.h1class{
+    color: red;
+}
+/* How to calculate specificity */
+/* 0,0,1,0 --->10 */
+
+
+/* #h1id{
+    color: blue;
+} */

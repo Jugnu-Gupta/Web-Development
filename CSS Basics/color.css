@@ -1,0 +1,18 @@
+h2{
+    /* color: rgb(255, 0, 0); */
+    /* 'rgb' means red-green-blue, max value of red,green,blue is 255*/
+    color:#f1e100;
+    background-color: #ff0000;
+    /* this ->"#f4e511" is hexcode(0,1,2...,9,a,b,c,d,e), in which 1st,2nd and 3rd two value is for red and green respectively.*/
+
+    /* for dark grey color pick any two small value(eg. 32) and then write it 3 times(eg.#323232) */
+    /* color:#323232; */
+    
+    /* for light grey color pick any two high value(eg. cd) and then write it 3 times(eg.#cdcdcd) */
+    /* color:#cdcdcd; */
+
+    /* for white color you can use "#fff"*/
+    /* color:#fff; */
+    /* for black color you can use "#000"*/
+    /* color:#000; */
+}
