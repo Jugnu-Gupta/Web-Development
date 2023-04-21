@@ -1,0 +1,19 @@
+p{
+    font-size: 18px;
+    text-decoration: underline;
+    line-height: 30px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+
+h1{
+    font-size: 45px;
+    text-decoration: underline dashed red;
+}
+
+h2{
+    font-size: 36px;
+    text-decoration: wavy underline blue;
+}
+
+/* text-decoration can be underline,overline,line-through  with wavy, dashed,dotted,  */
