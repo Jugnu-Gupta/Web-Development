@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Media Tags</h1>
+    <img src="./Screenshot_20220722-183220.png" alt="Jugnu Gupta" height="100px" loading="lazy">
+    <h2>Audio</h2>
+    <p>Listen to the Vaaste Song:</p>
+    <!-- 1st method -->
+    <audio src="./Vaaste Song.mp3" type="audio/mp3" controls autoplay></audio>
+    <!-- 2nd method -->
+    <audio controls>
+        <source src="./Vaaste Song.mp3" type="audio/mp3" autoplay muted>
+    </audio>
+
+    <h2>Video</h2>
+    <!-- 1st method -->
+    <video src="./Vaaste Song.mp4" type="video/mp4" controls height="150" autoplay></video><br>
+    <!-- 2nd method -->
+    <video controls height="150" autoplay muted>
+        <source src="./Vaaste Song.mp4" type="video/mp4">
+    </video><br>
+
+    <iframe src="../lecture7/ProductCatalog.html" frameborder="1" height="200" width="300px"></iframe><br>
+    <iframe src="https://www.youtube.com/embed/rOdLGbZdxzw" frameborder="1" height="200" width="300px"></iframe><br>
+    <!-- Autoplay with sound: allow="autoplay" && add ?autoplay=1 at the end of url -->
+    <iframe src="https://www.youtube.com/embed/rOdLGbZdxzw?autoplay=1" frameborder="1" height="200" width="300px"
+        allow="autoplay"></iframe><br>
+    <!-- Autoplay without sound: allow="autoplay" && add ?autoplay=1&mute=1 at the end of url -->
+    <iframe src="https://www.youtube.com/embed/rOdLGbZdxzw?autoplay=1&mute=1" frameborder="1" height="200" width="300px"
+        allow="autoplay"></iframe><br>
+    <p>1</p>
+</body>
+
+</html>

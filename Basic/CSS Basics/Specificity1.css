@@ -9,7 +9,7 @@ h1{
     color: green;
 }
 h1.heading{
-    color: magenta;
+    color: yellow;
 }
 /* How to calculate specificity */
 /* 0,0,1,1 --->11 */

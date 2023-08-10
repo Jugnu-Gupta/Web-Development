@@ -48,3 +48,16 @@ ul+p{
 section.my-articles h2+p{
     color: rgb(32, 218, 119);
 }
+.Hello {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border:5px solid white;
+}
+
+.Hello > div{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border:10px solid white;
+}

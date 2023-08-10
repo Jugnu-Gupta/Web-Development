@@ -1,0 +1,39 @@
+/* Font link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+p{
+    /* Fonts */
+    font-style: italic;
+    font-size: 20px;
+    /* font-family: cursive; */
+    font-family: 'Roboto Slab', serif;
+    line-height: 40px;
+    /* word-spacing: 10px; */
+    /* letter-spacing: 10px; */
+    /* font-weight: 100; */
+}
+p.firstpara{
+    /* Colors */
+    /* color by names */
+    background-color: brown;
+    color: yellow;
+}
+p.secondpara{
+    /* color by rbg */
+    background-color: rgb(50,50,50);
+    color:rgb(10,10,255);
+}
+p.thirdpara{
+    /* color by rbga(red,green,blue,alpha) where alpha is for transparency */
+    background-color: rgba(50,200,50,1);
+    color:rgba(10, 10, 255, 0.8);
+}
+p.fourthpara{
+    /* color by hexadecimal */
+    background-color: #d33981ec; /* last 2 digits are for transparency */
+    color:#cad349
+}
+h1{
+    /* hsl(hue, saturation, lightness) & hsla(hue, saturation, lightness, alpha)  */
+    background-color: hsla(139, 87%, 49%, 0.872);
+}
