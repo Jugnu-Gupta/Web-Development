@@ -20,8 +20,8 @@ img.image1{
     width: 150px;
     height: 150px;
     margin: 10px;
-    /* position: absolute;
-    top: 100px; */
+    /* position: absolute; */
+    top: 100px; 
 }
 img.image2{
     width: 150px;

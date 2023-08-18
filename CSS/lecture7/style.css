@@ -26,7 +26,6 @@ h1{
     margin: 20px;
     /* great collapse, fixed by overflow:auto; */
     overflow: auto;
-
     margin-bottom: 100px;
 }
 .item{
