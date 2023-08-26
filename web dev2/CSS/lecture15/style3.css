@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(42, 77, 133);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 30rem;
+    width: 60rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover::before{
+    left: 0%;
+}
+
+.card::before{
+    background-color: #666666a5;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    top: 0%;
+    transition: left 5s ease-in-out;
+}
+
+.leftBox{
+    background-color: rgb(82, 1, 87);
+    width: 50%;
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.leftBox>h2{
+    font-size:2.3rem;
+}
+.leftBox>p{
+    font-size:1.2rem;
+}
+.engagement{
+    display: flex;
+    justify-content: space-between;
+}
+.engagement p{
+    font-size:small;
+}
+.engagement h3{
+    font-size:xx-large;
+}
+.rightBox{
+    width: 50%;
+    height: 100%;
+}
+.rightBox img{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* color of every elements turn blue due to inheritance from body. */
+        /* :not(p) {
+            color: blue;
+        } */
+
+        /* space is for decendent selector */
+        /* body :not(p) {
+            color: blue;
+        } */
+        body :not(.fancy) {
+            color: blue;
+            background-color: #ddd;
+        }
+
+        /* used to select "empty" elemenets */
+        div:empty {
+            background-color: black;
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+        }
+
+        /* used to select "root" elements i.e (html tag) */
+        :root {
+            background-color: #333;
+            color: #eee;
+            /* height: 100px;
+            width: 100px; */
+        }
+    </style>
+    <title>Pseudo Classes</title>
+</head>
+
+<body>
+    <h1>My heading</h1>
+    <div></div>
+    <p class="fancy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt error dicta sint animi ipsum
+        ullam vero ex
+        eaque fugiat, dolores iste nihil nam iusto veniam. In corrupti voluptates soluta qui.</p>
+    <div></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui reprehenderit accusantium ab similique, aliquid
+        quae ad id alias nisi pariatur, excepturi facere quibusdam exercitationem, ipsam sapiente placeat fugiat
+        expedita accusamus!</p>
+</body>
+
+</html>

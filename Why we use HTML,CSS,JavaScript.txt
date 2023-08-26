@@ -1,0 +1,5 @@
+HTML stands for Hypertext Markup Language. It is a markup language used to create and design web pages. HTML provides a standard set of tags and attributes that web developers use to structure the content and layout of a web page.
+
+HTML is a fundamental building block of the web, and every web page you see in a web browser is written in HTML. HTML code can include text, images, videos, links, and other multimedia elements that create the visual and interactive experience of a web page.
+
+Web developers use HTML to structure and organize the content of a web page, and to apply styles and formatting to text and other elements. HTML is often used in combination with other web technologies such as CSS (Cascading Style Sheets) and JavaScript to create more complex and dynamic web pages.

@@ -1,0 +1,75 @@
+:root{
+    --global--primary-color:brown;
+    --global--custom-width:330px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: beige;
+    border: 5px solid black;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    /* local varaibles */
+    --primary-color:brown;
+    --custom-width:330px;
+    /* border: 2px solid var(--primary-color);
+    width: var(--custom-width); */
+    
+    /* global varaibles */
+    border: 2px solid var(--global--primary-color);
+    width: var(--global--custom-width);
+
+    background-color: aquamarine;
+    height: 330px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+
+    /* box-Shadow */
+    /* offset-x | offset-y | color */
+    /* box-shadow: -10px 15px brown; */
+    
+    /* offset-x | offset-y | blur-radius | color */
+    /* box-shadow: 10px 15px 20px brown; */
+    
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    /* box-shadow: 10px 15px 5px 10px #555; */
+
+    /* inset | offset-x | offset-y | color */
+    /* box-shadow: inset 10px 15px brown; */
+
+    /* Any number of shadows, separated by commas */
+    /* box-shadow: 10px 15px brown,15px 20px green; */
+}
+#head1{
+    /* text-Shadow */
+    /* offset-x | offset-y | blur-radius | color */
+    /* text-shadow: 2px 3px 1px white; */
+    
+    /* color | offset-x | offset-y | blur-radius */
+    /* text-shadow: yellow 12px 13px 2px; */
+    
+    /* offset-x | offset-y | color */
+    /* text-shadow: 12px 13px white; */
+    
+    /* color | offset-x | offset-y */
+    /* text-shadow: white 2px 5px; */
+    
+    /* offset-x | offset-y
+    /* Use defaults for color and blur-radius */
+    /* text-shadow: 12px 15px; */
+    
+    /* Any number of shadows, separated by commas */
+    text-shadow: red 2px 2px,4px 4px green,6px 6px blue;
+}
+img{
+    margin: 2px;
+    height: 150px;
+}

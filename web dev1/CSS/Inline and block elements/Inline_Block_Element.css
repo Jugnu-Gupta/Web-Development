@@ -1,0 +1,17 @@
+/* a{
+    border:2px solid black;
+    margin:50px;
+    padding:20px;
+    height:100px;
+    width:100px;
+} */
+
+/* after this display:inline-block; we can use height,width,padding and margin in Inline-Element. */
+a{
+    border:2px solid black;
+    margin:20px;
+    padding:20px;
+    height:100px;
+    width:150px;
+    display:inline-block;
+}

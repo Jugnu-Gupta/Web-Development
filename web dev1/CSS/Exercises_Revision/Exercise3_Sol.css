@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+font-family: 'Roboto', sans-serif;
+width:1400px;
+    margin: 20px auto;
+}
+
+
+nav{
+    background-color: #bbb;
+}
+
+nav ul{
+    padding-left: 0px; /* to remove padding of ul list, which is present at left*/
+    text-align:center;
+}
+
+nav li{
+    display:inline-block;
+    margin: 15px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color:#333;
+    text-decoration: none;
+}
+
+.margin_bot{
+    margin-bottom:50px;
+}
+
+.underline{
+    border-bottom:2px solid #777;
+}

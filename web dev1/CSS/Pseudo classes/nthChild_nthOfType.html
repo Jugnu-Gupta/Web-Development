@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Select and style every <p> element that is the last child of its parent: */
+        /* where n: 0, 1, 2, 3...(whole number) */
+        p:nth-child(2n+1) {
+            color: royalblue;
+        }
+
+        /* Specify a i.e background-color etc, for the last <p> element of its parent: */
+        /* where n: 0, 1, 2, 3...(whole number) */
+        p:nth-of-type(2n) {
+            color: orange;
+        }
+
+        ul li:nth-child(2n) {
+            color: rgb(25, 0, 255);
+            background-color: aqua;
+        }
+
+        ul li:nth-child(2n+1) {
+            color: rgb(255, 157, 0);
+            background-color: aquamarine;
+        }
+    </style>
+    <title>nth child and nth of type</title>
+</head>
+
+<body>
+    <header>
+        <p>I am the 1st para inside header and first element too</p>
+        <p>I am the 2nd para </p>
+        <p>I am the 3rd para </p>
+        <p>I am the 4th para </p>
+        <p>I am the 5th para </p>
+        <p>I am the 6th para </p>
+        <p>I am the 7th para </p>
+        <p>I am the 8th para </p>
+        <h3>I am heading and last element</h3>
+    </header>
+
+    <header>
+        <h3>heading </h3>
+        <p>I am the 1st para </p>
+        <p>I am the 2nd para</p>
+        <p>I am the 3rd para</p>
+    </header>
+
+    <p>I am direct child of body</p>
+    <p>I am also direct child of body</p>
+
+    <div class="container">
+        <p>I am the 1st para inside container</p>
+        <p>I am the 2nd para inside container</p>
+        <p>I am the last para inside container</p>
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+
+</html>

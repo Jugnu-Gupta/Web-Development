@@ -1,0 +1,21 @@
+body{
+    color: red;
+}
+
+.container1{
+    font-size: 20px;
+    color: green;
+}
+
+.container2{
+    font-size: 20px;
+    color: purple;
+}
+
+/* th */
+a{
+    color: orange;
+    text-decoration:none;
+    /* default color of  "a" tag link is "rgb(0,0,238)".therefore 
+    red color given to it is overwritten by "rgb(0,0,238)"*/
+}

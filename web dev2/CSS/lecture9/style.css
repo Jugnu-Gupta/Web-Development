@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box {
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    border: 2px solid red;
+}
+
+/* @media (min-width:300px) and (max-width:500px) {
+    .box {
+        background-color: blue;
+    }
+} */
