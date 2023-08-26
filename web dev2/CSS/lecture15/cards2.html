@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: azure;
+            border-radius: 1rem;
+            width: 19rem;
+            height: 28rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .card .product {
+            border-radius: 1rem 1rem 0rem 0rem;
+            height: 34%;
+            width: 100%;
+        }
+
+        .textBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 70%;
+            text-align: center;
+        }
+
+        .textBox h2 {
+            font-size: 1.25rem;
+        }
+
+        .textBox p {
+            font-size: 1rem;
+        }
+
+        .plans {
+            background-color: aquamarine;
+            border-radius: 0.5rem;
+            height: 12%;
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .plans .leftBox {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+
+        .leftBox .favicon {
+            /* border-radius: 1rem 1rem 0rem 0rem; */
+            width: 30%;
+            border-radius: 25%;
+        }
+
+        #paymentButton {
+            border-radius: 0.5rem;
+            background-color: rgb(29, 19, 109);
+            width: 75%;
+            height: 10%;
+            font-size: 1rem;
+            color: azure;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.27);
+        }
+
+        .cancelBox a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+
+        /* .plan_duration h3 {
+            font-size: 1rem;
+        } */
+    </style>
+    <title>Cards</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./Bengali-Sweets-Bengali-Rasgulla.webp" alt="product" class="product">
+
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, magni!</p>
+            </div>
+
+            <div class="plans">
+                <div class="leftBox">
+                    <img src="./Bengali-Sweets-Bengali-Rasgulla.webp" alt="favicon" class="favicon">
+                    <div class="plan_type">
+                        <h5>Annual Plans</h5>
+                        <h5>$99.9/year</h5>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <a href="#">change</a>
+                </div>
+            </div>
+            <button id="paymentButton">Proceed to Payment</button>
+            <div class="cancelBox">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

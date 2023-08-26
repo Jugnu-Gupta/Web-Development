@@ -1,8 +1,0 @@
-/* if you give "width", then "height" will we automatically adjusted. */
-/* if you give "height", then "width" will we automatically adjusted. */
-img{
-    /* width: 300px; */
-    height:300px;
-    border: 2px solid red;
-    padding: 10px;
-}
