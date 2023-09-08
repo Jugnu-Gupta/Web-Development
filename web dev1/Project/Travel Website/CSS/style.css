@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+/* ########################################### Utility Classes ################################################### */
+.text-red{
+    color: red;
+}
+.text-white{
+    color: white;
+}
+.bg-grey{
+    background-color: #ddd;
+}
+.Small{
+    font-size: 1.5rem;
+}
+.Medium{
+    font-size:1.8rem;
+}
+.Large{
+    font-size:3rem;
+}
+.Text-Align-Center{
+    text-align: center;
+}
+
+
+/* ########################################### header Style ################################################### */
+
+.content{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    padding-bottom: 10rem;
+}
+.Sec-Container{
+    background-image:linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,.1)), url("../images/pexels-thorsten-technoman-338504.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100vw;
+    padding: 1rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+.navbar .nav-items{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.navbar .logo img{
+    height: 4rem;
+    width: 4rem;
+}
+.navbar .nav-item a{
+    color:white;
+    text-decoration:none;
+}
+.navbar .nav-item:hover{
+    text-decoration:underline;
+    color: white;
+}
+header{
+    height: 100%;
+    width: 100%;
+}
+header .Sec{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+header .Sec .exploreButton{
+    background-color: white;
+    color: red;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+}
+header .Sec .exploreButton:hover{
+    background-color: #ccc;
+}
+
+
+/* ########################################### Main Style ################################################### */
+
+main .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 25%;
+    margin-top: 100px;
+}
+.card img{
+    width:46.75rem;
+    object-fit: cover;
+    object-position: center;
+}
+@media screen and (max-width:660px)  {
+    .card img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1285px)  {
+    .card img{
+        order:-1;
+    }
+}
+.card .description{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width:46.75rem;
+    padding: 1rem 2rem 1rem 2rem;
+    overflow: auto;
+}
+main .card .moreButton{
+    width: 8rem;
+    background-color: white;
+    color: red;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+}
+main .card .moreButton:hover{
+    background-color: #ccc;
+}
