@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/848e0df24d.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <title>Travel Website</title>
+    <title>Travel Website | Travel the world</title>
 </head>
 
 <body>
-    <div class="container bg-grey">
+    <div class="pri-container letter-spacing">
         <div class="Sec-Container">
             <div class="content">
                 <header>
@@ -25,41 +26,74 @@
                             <li class="nav-item"><a href="./ContactUs.html">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="Sec text-white">
+                    <div class="Sec text-white Text-Align-Center">
                         <h1 class="Large">TRAVEL THE WORLD</h1><br>
                         <p class="Small Text-Align-Center">TRAVEL THE WORLD, EXPERIENCE THE GREATNESS, IT'S THE BEST
                             DIFT GIVEN BY NATURE</p><br>
-                        <input class="exploreButton text-red Small" type="button" value="EXPLORE PLACES">
+                        <a class="exploreButton text-red Small" href="#explore-places">EXPLORE PLACES</a>
                     </div>
                 </header>
             </div>
         </div>
-        <main>
+        <main class="main-content bg-grey" id="explore-places">
             <div class="content">
                 <section class="card">
                     <img src="./images/pexels-zahid-lilani-2104742.jpg" alt="Tourist Place">
                     <div class="description">
-                        <h1 class="Large">ABC</h1>
+                        <h1 class="Large">Golden Gate Bridge</h1>
                         <p class="Medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nostrum iusto
                             quidem quibusdam ut amet neque reiciendis nemo. Quasi vitae at eius eum necessitatibus
                             mollitia dolore voluptatum. Itaque.</p>
                         <br>
-                        <input class="moreButton text-red Small filter" type="button" value="MORE">
+                        <a class="moreButton text-red Small filter" href="./About.html">MORE</a>
                     </div>
                 </section>
                 <section class="card">
                     <div class="description">
-                        <h1 class="Large">XYZ</h1>
+                        <h1 class="Large">Landscape With Forest</h1>
                         <p class="Medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nostrum iusto
                             quidem quibusdam ut amet neque reiciendis nemo. Quasi vitae at eius eum necessitatibus
                             mollitia dolore voluptatum. Itaque.</p>
                         <br>
-                        <input class="moreButton text-red Small filter" type="button" value="MORE">
+                        <a class="moreButton text-red Small filter" href="./About.html">MORE</a>
                     </div>
-                    <img src="./images/pexels-vincent-rivaud-2147487.jpg" alt="Tourist Place">
+                    <img src="./images/pexels-andrei-tanase-1271619.jpg" alt="Tourist Place">
                 </section>
             </div>
         </main>
+        <footer>
+            <div class="content">
+                <div class="features text-white Text-Align-Center">
+                    <section class="bg-black">
+                        <i class="fa-solid fa-route fa-1x text-red"></i>
+                        <h2 class="Medium">Adventurous</h2><br>
+                        <p class="Small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam et debitis.
+                            possimus provident harum officia quam, delectus nemo! Repellendus asperiores</p>
+                    </section>
+                    <section class="bg-gradient-red">
+                        <i class="fa-solid fa-strikethrough fa-1x"></i>
+                        <h2 class="Medium">Less price</h2><br>
+                        <p class="Small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam et debitis.
+                            possimus provident harum officia quam, delectus nemo! Repellendus asperiores</p>
+                    </section>
+                    <section class="bg-black">
+                        <i class="fa-solid fa-user-check fa-1x text-red"></i>
+                        <h2 class="Medium">Experience</h2><br>
+                        <p class="Small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam et debitis.
+                            possimus provident harum officia quam, delectus nemo! Repellendus asperiores</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="footer Text-Align-Center bg-black">
+                <div class="social-media-icons">
+                    <i class="fa-brands fa-instagram fa-4x text-white"></i>
+                    <i class="fa-brands fa-x-twitter fa-4x text-white"></i>
+                    <i class="fa-brands fa-meta fa-4x text-white"></i>
+                </div>
+                <p class="Small text-white">World Travel &copy; 2023. All Rights Reserved</p>
+            </div>
+        </footer>
     </div>
 </body>
 

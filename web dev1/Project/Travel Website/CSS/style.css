@@ -15,20 +15,42 @@ html{
 .text-white{
     color: white;
 }
+.bg-white{
+    background-color: #fff;
+}
 .bg-grey{
-    background-color: #ddd;
+    background-color: #eee;
+}
+.bg-black{
+    background-color: #232323;
+}
+.bg-red{
+    background-color: #e83e3e;
 }
 .Small{
     font-size: 1.5rem;
 }
 .Medium{
     font-size:1.8rem;
+    font-weight: 400;
 }
 .Large{
     font-size:3rem;
 }
 .Text-Align-Center{
     text-align: center;
+}
+.letter-spacing{
+    letter-spacing: 0.1rem;
+}
+.font-weight-avg{
+    font-weight: 400;
+}
+.font-weight-high{
+    font-weight: 600;
+}
+.bg-gradient-red{
+    background: linear-gradient(25deg,rgb(224, 84, 103),#ee4758 50%);
 }
 
 
@@ -39,10 +61,9 @@ html{
     width: 70%;
     margin: auto;
 }
-.container{
+.pri-container{
     font-family: 'Poppins', sans-serif;
     background-position: center;
-    padding-bottom: 10rem;
 }
 .Sec-Container{
     background-image:linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,.1)), url("../images/pexels-thorsten-technoman-338504.jpg");
@@ -50,13 +71,13 @@ html{
     background-size: cover;
     height: 95vh;
     width: 100vw;
-    padding: 1rem;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     letter-spacing: 0.2rem;
     font-weight: 600;
+    padding: 1rem;
 }
 .navbar .nav-items{
     display: flex;
@@ -75,6 +96,13 @@ html{
     text-decoration:underline;
     color: white;
 }
+@media screen and (max-width:500px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
 header{
     height: 100%;
     width: 100%;
@@ -90,6 +118,8 @@ header .Sec{
 }
 header .Sec .exploreButton{
     background-color: white;
+    border: 2px solid black;
+    text-decoration: none;
     color: red;
     padding: 0.8rem;
     border-radius: 1.5rem;
@@ -97,17 +127,23 @@ header .Sec .exploreButton{
 header .Sec .exploreButton:hover{
     background-color: #ccc;
 }
-
+.horizontal-line{
+    border: 1px solid rgb(238, 94, 94);
+    height: .6rem;
+    margin-bottom: 1rem;
+}
 
 /* ########################################### Main Style ################################################### */
-
+.main-content{
+    padding: 8rem 0rem .1rem 0rem ;
+}
 main .card{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     height: 25%;
-    margin-top: 100px;
+    margin-bottom: 8rem;
 }
 .card img{
     width:46.75rem;
@@ -119,7 +155,7 @@ main .card{
         width: 100%;
     }
 }
-@media screen and (max-width:1285px)  {
+@media screen and (max-width:1338px)  {
     .card img{
         order:-1;
     }
@@ -133,12 +169,130 @@ main .card{
     overflow: auto;
 }
 main .card .moreButton{
-    width: 8rem;
     background-color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    width: 8rem;
     color: red;
-    padding: 0.8rem;
+    padding: .6rem 1.5rem;
     border-radius: 1.5rem;
 }
 main .card .moreButton:hover{
     background-color: #ccc;
+}
+
+
+/* ########################################### Footer style ################################################### */
+
+footer .features{
+    margin: 8rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer .features section{
+    padding: 1rem;
+    width: 31.1rem;
+}
+@media screen and (max-width:1335px){
+    footer .features{
+        flex-direction: column;
+        align-content: center;
+        gap: 6rem;
+    }
+    footer .features section{
+        width: 46.75rem;
+    }
+}
+footer .footer{
+    padding: 2rem;
+}
+.footer .social-media-icons i{
+    margin: 1rem 1rem;
+}
+
+
+/* ########################################### About Page styling ################################################### */
+.about{
+    margin: 5rem 0rem;
+}
+.about .lists{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 0rem;
+}
+.about .lists ul li:before{
+    content: "✓";
+    color: #e83e3e;
+    font-weight: 600;
+}
+.about .statistics{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap ;
+    margin: 2rem 0rem;
+}
+.about .contact{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: 0.1rem solid rgb(232, 77, 77);
+}
+.about .contact .leftBox{
+    width: 60%;
+}
+.about .contactButton{
+    border: 2px solid white;
+    text-decoration: none;
+    padding: .5rem 2rem;
+}
+@media screen and (max-width:650px) {
+    .about .lists{
+        align-items: center;
+        flex-direction: column;
+    }
+    .about .statistics{
+        flex-direction: column;
+        height: 15rem;
+    }
+    .about .contact{
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+/* ########################################### Conatact Us styling ################################################### */
+
+.contactus{
+    display:flex;
+    gap:2rem;
+    padding: 2rem 0rem;
+    margin: 5rem 0rem;
+}
+.contactus .leftBox{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50%;
+}
+.contactus .rightBox{
+    padding: 1rem;
+    width: 50%;
+}
+.contactus .leftBox .nature{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+.contactus input,.contactus textarea{
+    width: 100%;
+}
+.contactus .SubmitButton{
+    padding: .5rem 1rem;
 }

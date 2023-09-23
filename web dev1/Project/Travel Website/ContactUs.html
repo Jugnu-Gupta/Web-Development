@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/848e0df24d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Travel Website | Travel the world</title>
+</head>
+
+<body>
+    <div class="pri-container letter-spacing bg-grey">
+        <div class="bg-black">
+            <div class="content">
+                <header>
+                    <nav class="navbar">
+                        <div class="logo">
+                            <img src="./images/logo.png" alt="Resort">
+                        </div>
+                        <ul style="list-style-type: none;" class="nav-items Medium">
+                            <li class="nav-item"><a href="./Index.html">Home</a></li>
+                            <li class="nav-item"><a href="./About.html">About</a></li>
+                            <li class="nav-item"><a href="./ContactUs.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <main class="layout">
+            <div class="content">
+                <div class="contactus Small">
+                    <div class="leftBox bg-white">
+                        <h2 class="location"><i class="fa-solid fa-location-dot text-red"></i> Location</h2>
+                        <p>Lorem ipsum dolor sit amet.</p><br>
+                        <h2 class="email"><i class="fa-regular fa-envelope text-red"></i> E-Mail</h2>
+                        <p>mywebsite @gmail.com</p><br>
+                        <h2 class="call"><i class="fa-solid fa-phone text-red"></i> CALL</h2>
+                        <p>+91 0101010101</p><br>
+                        <img class="nature" src="./images/pexels-andrei-tanase-1271619.jpg" alt="Building">
+                    </div>
+                    <div class="rightBox bg-white">
+                        <h1 class="Large">Contact Us</h1>
+                        <hr class="horizontal-line bg-red">
+                        <p>Let us know your questions, suggestions and concerns by filling out the contact
+                            from below.
+                        </p><br>
+                        <form>
+                            <label class="Medium" for="username">Username<span
+                                    class="text-red font-weight-high">*</span></label><br>
+                            <input type="text" name="username" id="username" required><br>
+                            <label class="Medium" for="email">Email<span
+                                    class="text-red font-weight-high">*</span></label><br>
+                            <input type="text" name="email" id="email" required><br>
+                            <label class="Medium" for="phone">Phone<span
+                                    class="text-red font-weight-high">*</span></label><br>
+                            <input type="tel" pattern="[0-9]{10}" name="phone" id="phone" required><br>
+                            <label class="Medium" for="message">Message<span
+                                    class="text-red font-weight-high">*</span></label><br>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+                            <div class="Text-Align-Center">
+                                <button class="SubmitButton text-white bg-gradient-red" value="Submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer Text-Align-Center bg-black">
+                <div class="social-media-icons">
+                    <i class="fa-brands fa-instagram fa-4x text-white"></i>
+                    <i class="fa-brands fa-x-twitter fa-4x text-white"></i>
+                    <i class="fa-brands fa-meta fa-4x text-white"></i>
+                </div>
+                <p class="Small text-white">World Travel &copy; 2023. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
